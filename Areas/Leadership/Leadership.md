@@ -18,7 +18,7 @@ _The kind of leader you're stewarding yourself toward — character, clarity, co
 - Systems / protocols to build —
 
 ## Reference
-- [[Resources/Leadership-Library/.gitkeep|Leadership-Library]]
+- [[Resources/Leadership-Library/Leadership-Library-Index|Leadership-Library]]
 
 ## Review cadence
 - Weekly: one-on-ones, open decisions, leadership reading.

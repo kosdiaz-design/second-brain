@@ -18,7 +18,7 @@ _What faithful, excellent ministry looks like in this season._
 - Service / outreach —
 
 ## Reference
-- Linked study: [[Resources/Scripture/.gitkeep|Scripture]], [[Resources/Study/.gitkeep|Study]]
+- Linked study: [[Resources/Scripture/Scripture-Index|Scripture]], [[Resources/Study/Study-Index|Study]]
 
 ## Review cadence
 - Weekly: open commitments, people to follow up with.

@@ -1,6 +1,7 @@
 ---
 date: {{date:YYYY-MM-DD}}
 type: daily
+tags: [daily]
 ---
 
 # {{date:dddd, MMMM D, YYYY}}
@@ -8,16 +9,31 @@ type: daily
 ## Scripture / focus
 >
 
-## Top 3 today
+## Morning — intent (2 min)
+**Top 3 (only 3):**
 - [ ]
 - [ ]
 - [ ]
 
-## Log
+**Win condition — the one thing that makes today count:**
 -
 
-## Captured (to file at review)
+## Log — what happened
+_Link projects/areas as you touch them: [[Projects/...]] [[Areas/...]]_
 -
 
-## Reflection
+## Decisions made today
+_The calls you made — TPAPD, ministry, home. Easiest to forget, most valuable to keep._
 -
+
+## Captured — file at review
+_Raw drops, or items pulled from [[Inbox]] / [[Claude-Drafts]]._
+-
+
+## Evening — close the loop (2 min)
+- **Top 3 honest score:** /3
+- **Where did I see God today / what am I grateful for:**
+- **Tomorrow's one thing:**
+
+---
+*Iron sharpens iron (Prov. 27:17) — a brain that's reviewed, not just filled, is the one that sharpens you.*
