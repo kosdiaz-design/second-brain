@@ -18,10 +18,10 @@ Stewardship of the mind — one clean ledger, faithfully tended (Prov. 21:5). Ca
 ## Next actions
 - [x] Clear stale `.git/HEAD.lock`, commit daily note (Mac terminal)
 - [x] Create private GitHub repo `kosdiaz-design/second-brain` and push
-- [ ] Install + configure Obsidian Git plugin (auto-commit 10m / push / pull)
-- [ ] Enable Mac Claude Desktop Filesystem connector → Brain + Secure
+- [x] Install + configure Obsidian Git plugin (auto-commit 10m / push / pull)
+- [x] Enable Mac Claude Desktop Filesystem connector → Brain + Secure
 - [ ] Open Secure folder as a separate vault in Obsidian
-- [ ] Phone: install Obsidian, clone Brain repo (Working Copy)
+- [ ] Phone: install Obsidian, clone Brain repo (Obsidian Git + PAT) — deferred
 - [ ] VPS: clone to /opt/second-brain, cron sync, Dockerized MCP, TLS + auth + IP allowlist
 
 ## Reference
@@ -30,3 +30,4 @@ Stewardship of the mind — one clean ledger, faithfully tended (Prov. 21:5). Ca
 ## Log
 - 2026-05-29 — Phase 1 built: PARA structure, map, templates, Git init, protocol saved. Secure vault scaffolded. Areas seeded.
 - 2026-05-30 — Vault cleanup pass: removed stock Welcome.md + Hermes test artifact, repaired broken Area→Resource links, promoted v2 daily template, added 2026-05-30 daily note. Committed + pushed to GitHub (4f66de7) — Git backbone verified end to end (vault → Git → GitHub).
+- 2026-05-30 — Phase 2 (Mac) complete: Obsidian Git auto-sync live (commit-and-sync every 10m, push + pull on). Mac Claude Desktop Filesystem connector wired to both vaults; Brain + Secure reads verified. Phone phase deferred. Foundation done — Mac is a fully working AI second brain.
