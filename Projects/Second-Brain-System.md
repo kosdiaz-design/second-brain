@@ -26,6 +26,8 @@ Stewardship of the mind — one clean ledger, faithfully tended (Prov. 21:5). Ca
 
 ## Reference
 - [[Resources/Second-Brain-Build-Protocol]]
+- [[Resources/Build-Session-2026-05-30|Build Session Log — 2026-05-30]]
+- [[Resources/Hermes-Vault-Integration]]
 
 ## Log
 - 2026-05-29 — Phase 1 built: PARA structure, map, templates, Git init, protocol saved. Secure vault scaffolded. Areas seeded.

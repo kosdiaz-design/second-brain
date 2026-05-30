@@ -1,10 +1,10 @@
 ---
 title: Build Session Log — 2026-05-30 (Phase 2 Mac complete)
-type: draft
-status: review
+type: reference
+status: filed
 source: Claude chat (Cowork)
 updated: 2026-05-30
-note: "Captured chat → vault. Reference runbook for the Second Brain build. File into Resources/ at review (suggest Resources/Second-Brain-Build-Protocol as companion)."
+filed: 2026-05-30
 tags: [second-brain, build-log, runbook, infra]
 ---
 

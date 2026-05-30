@@ -25,6 +25,8 @@ A vault is just a folder of `.md` files. That means the system is three independ
 ```
 Git is the single source of truth. Every device and the AI server all point at it.
 
+> **Related:** [[Build-Session-2026-05-30|Build Session Log — 2026-05-30]] — verified config + runbook for what was actually deployed. · [[Hermes-Vault-Integration]] — VPS agent wiring.
+
 ---
 
 ## 1. Two-vault security model (do this first)
