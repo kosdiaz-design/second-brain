@@ -22,14 +22,21 @@ updated: 2026-05-29
 - **Templates** — note templates
 
 ## Active Projects
-- _file active projects here during daily review_
+- [[Projects/Second-Brain-System|Second Brain System]]
 
 ## Areas index
-- [[Areas/Ministry/.gitkeep|Ministry]]
-- [[Areas/Leadership/.gitkeep|Leadership]]
-- [[Areas/Fitness/.gitkeep|Fitness]]
-- [[Areas/Marriage/.gitkeep|Marriage]]
-- [[Areas/Finances/.gitkeep|Finances]]
+- [[Areas/Ministry/Ministry|Ministry]]
+- [[Areas/Leadership/Leadership|Leadership]]
+- [[Areas/Fitness/Fitness|Fitness]]
+- [[Areas/Marriage/Marriage|Marriage]]
+- [[Areas/Finances/Finances|Finances]]
+
+## Resources
+- [[Resources/Scripture/Scripture-Index|Scripture]]
+- [[Resources/Study/Study-Index|Study]]
+- [[Resources/Dev-Reference/Dev-Reference-Index|Dev Reference]]
+- [[Resources/Leadership-Library/Leadership-Library-Index|Leadership Library]]
+- [[Resources/Second-Brain-Build-Protocol|Build Protocol]]
 
 ## Rhythm
 - **Daily (2 min):** Clear `/Inbox` and `/Claude-Drafts` — file or delete each item.
