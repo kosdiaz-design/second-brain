@@ -61,7 +61,29 @@ GitHub plus two live clones gives redundancy, but every live copy can receive a 
 git clone /opt/backups/second-brain/second-brain-YYYYMMDD-HHMMSS.bundle restored-vault
 ```
 
-**Optional offsite upgrade (true 3-2-1):** mirror `/opt/backups/second-brain/` off the box with `rclone` to object storage (Backblaze B2 / S3), or switch to `restic` with a remote repository. This protects against losing the VPS itself.
+---
+
+## VPS offsite mirror (Google Drive)
+
+The bundles are also mirrored off the VPS to Google Drive, so losing the box itself doesn't lose the backups.
+
+**Script:** `/opt/second-brain-offsite.sh` — `rclone sync` bundles → Drive.
+**Schedule:** cron, nightly 04:45 UTC (15 min after the backup): `45 4 * * * /opt/second-brain-offsite.sh`
+**Remote:** rclone remote `gdrive:` → folder `second-brain-backups`.
+**Scope:** `drive.file` — rclone can only see/manage the files it created, never the rest of the Drive.
+**Log:** `/var/log/second-brain-offsite.log`
+**Config:** `/root/.config/rclone/rclone.conf`.
+
+`rclone sync` mirrors the local 14-bundle rotation, so old snapshots are pruned in Drive too.
+
+**Restore from Drive:**
+
+```bash
+rclone copy gdrive:second-brain-backups/second-brain-YYYYMMDD-HHMMSS.bundle ./
+git clone second-brain-YYYYMMDD-HHMMSS.bundle restored-vault
+```
+
+If rclone ever reports `empty token` or auth failure: `rclone config reconnect gdrive:` (answer `n` to the browser prompt, run the printed `rclone authorize` line on a machine with a browser, paste the token back).
 
 ---
 
@@ -76,6 +98,9 @@ crontab -l | grep second-brain
 
 # VPS: latest backups present?
 ls -1t /opt/backups/second-brain/ | head
+
+# VPS: offsite copies present in Drive?
+rclone ls gdrive:second-brain-backups
 ```
 
 A `git push` that reports "Everything up-to-date" or succeeds with `exit=0` means auth and sync are healthy. If a push ever fails with an SSH/permission error under cron, root's GitHub key needs a passphrase cron can't supply — replace it with a dedicated passphraseless deploy key.
@@ -90,5 +115,6 @@ A `git push` that reports "Everything up-to-date" or succeeds with `exit=0` mean
 | GitHub | cloud hub | live remote |
 | VPS `/opt/second-brain` | VPS disk | live working copy |
 | VPS bundles | `/opt/backups` | immutable snapshots (14 days) |
+| Google Drive | `second-brain-backups` | offsite immutable snapshots (14 days) |
 
-Three live copies plus immutable history. The one remaining hardening step is moving the bundles **off** the VPS so no single machine or provider is a single point of failure. A second-brain you depend on deserves that last copy — build it once, and years of work stay protected.
+Full 3-2-1 achieved: three live working copies, immutable point-in-time snapshots, and an offsite copy on a separate provider. No single machine, account, or provider failure can take down the vault. A second-brain you depend on now has the redundancy it deserves — stewardship made durable.
