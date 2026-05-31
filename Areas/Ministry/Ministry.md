@@ -14,7 +14,7 @@ _What faithful, excellent ministry looks like in this season._
 
 ## Active threads
 - ISF —
-- Teaching / discipleship —
+- Teaching / discipleship — Scholar-Teacher Track: [[Front 2 — Romans Protocol]] (active 90-day campaign)
 - Service / outreach —
 
 ## Reference
