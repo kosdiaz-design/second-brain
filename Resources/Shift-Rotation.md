@@ -72,7 +72,17 @@
 - **Authority:** This file is the single source of truth for all rotation references.
 - **Advancing:** When the active cycle ends (every 14 days), the *Current Cycle Reference* table rolls forward to the next D1 start date. The anchor and pattern are not touched.
 - **Verification:** Any date can be checked against the anchor — `(date − May 17, 2026) mod 14` → day index → pattern.
+
+### Auto-Advance Protocol (standing instruction)
+
+- **Trigger:** Cycle **D14** (the final off-day, a Saturday) — or the first time rotation/schedule/training is discussed on or after that date.
+- **Action on trigger:**
+  1. Roll *Current Cycle Reference* forward to the next cycle (new D1 = day after current D14).
+  2. Update **Last advanced** and **Next advance due** below.
+  3. Confirm to Eric what was advanced.
+- **Self-healing:** On any rotation-related request, compare today's date to *Next advance due*. If today ≥ that date, advance before answering — rolling through multiple cycles if more than one has elapsed, landing on the cycle that contains today.
 - **Last advanced:** 2026-05-30 → cycle starting Sun May 31, 2026.
+- **Next advance due:** **Sat Jun 13, 2026** (D14) → roll to cycle starting Sun Jun 14, 2026.
 
 > *"Let all things be done decently and in order."* — 1 Corinthians 14:40
 
